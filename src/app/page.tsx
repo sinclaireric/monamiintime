@@ -216,7 +216,7 @@ export default function HomePage() {
 
         {/* 9. CTA final */}
         <section className="py-40 px-margin-mobile md:px-margin-desktop text-center bg-primary-container/60 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-[0.07] pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at center, #a96b52 0%, transparent 70%)" }}></div>
+          <div className="absolute inset-0 opacity-10 pointer-events-none" style={{ backgroundImage: "radial-gradient(circle at center, #e9c176 0%, transparent 70%)" }}></div>
           <div className="relative z-10 max-w-3xl mx-auto">
             <h2 className="font-display-lg text-display-lg md:text-6xl text-primary mb-12 leading-tight">
               Êtes-vous prêt à devenir votre <span className="italic text-secondary">meilleur ami</span>&nbsp;?
