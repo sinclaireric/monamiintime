@@ -15,9 +15,9 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Mon Ami Intime | L'agenda qui devient ton meilleur confident",
+  title: "Mon Ami Intime | Le compagnon de votre transformation",
   description:
-    "Plus qu'un agenda, un compagnon de développement personnel. Écris. Réfléchis. Grandis. Deviens.",
+    "Pendant 365 jours, transformez vos habitudes, guérissez votre histoire et construisez la vie que vous méritez. Écris. Réfléchis. Grandis. Deviens.",
 };
 
 export default function RootLayout({
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${playfair.variable} ${manrope.variable} dark h-full antialiased`}
+      className={`${playfair.variable} ${manrope.variable} h-full antialiased`}
     >
       <head>
         <link

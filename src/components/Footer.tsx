@@ -65,12 +65,12 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a
-                href="#"
+              <Link
+                href="/contact"
                 className="font-label-sm text-label-sm text-on-surface-variant/80 hover:text-primary transition-colors"
               >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
