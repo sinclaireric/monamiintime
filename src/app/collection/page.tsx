@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PRIX } from "@/lib/commande";
 
 export default function CollectionPage() {
   return (
@@ -25,7 +26,7 @@ export default function CollectionPage() {
       <div className="flex flex-col gap-4">
       <div className="flex justify-between items-end border-b border-outline-variant/30 pb-2">
       <span className="font-label-caps text-label-caps text-on-surface-variant">INVESTISSEMENT</span>
-      <span className="font-headline-md text-headline-md text-secondary">65,00€</span>
+      <span className="font-headline-md text-headline-md text-secondary">{PRIX}</span>
       </div>
       <ul className="flex flex-col gap-3 pt-2">
       <li className="flex items-center gap-3 text-on-surface-variant">

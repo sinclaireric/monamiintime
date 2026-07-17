@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import { PRIX, WHATSAPP_COMMANDE_URL } from "@/lib/commande";
 
 export default function PaiementPage() {
   const [paymentMethod, setPaymentMethod] = useState<"stripe" | "mobile">("stripe");
@@ -94,10 +94,13 @@ export default function PaiementPage() {
       </div>
       </div>
       </section>
-      <Link href="/confirmation" className="w-full bg-secondary text-on-secondary py-5 font-label-caps text-[12px] tracking-[0.2em] font-bold transition-all hover:brightness-110 active:scale-[0.98] flex items-center justify-center gap-3">
-                          FINALISER LA PRÉCOMMANDE
+      <a href={WHATSAPP_COMMANDE_URL} target="_blank" rel="noopener noreferrer" className="w-full bg-secondary text-on-secondary py-5 font-label-caps text-[12px] tracking-[0.2em] font-bold transition-all hover:brightness-110 active:scale-[0.98] flex items-center justify-center gap-3">
+                          FINALISER LA PRÉCOMMANDE SUR WHATSAPP
                           <span className="material-symbols-outlined">arrow_forward</span>
-      </Link>
+      </a>
+      <p className="text-center font-label-caps text-[10px] text-on-surface-variant/60 uppercase tracking-widest -mt-4">
+                          Vous serez redirigé vers WhatsApp pour confirmer votre précommande.
+      </p>
       <div className="flex items-center justify-center gap-8 py-4 opacity-50 grayscale">
       <div className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">lock</span> <span className="text-[10px] font-label-caps">PAIEMENT SÉCURISÉ SSL</span></div>
       <div className="flex items-center gap-2"><span className="material-symbols-outlined text-sm">verified_user</span> <span className="text-[10px] font-label-caps">Garantie 30 Jours</span></div>
@@ -117,13 +120,13 @@ export default function PaiementPage() {
       <h3 className="font-headline-md text-[18px] leading-tight mb-1">Agenda Signature</h3>
       <p className="text-[12px] text-on-surface-variant font-label-caps uppercase opacity-70">Édition Forêt Sombre &amp; Or</p>
       </div>
-      <div className="text-secondary font-headline-md text-xl">65,00€</div>
+      <div className="text-secondary font-headline-md text-xl">{PRIX}</div>
       </div>
       </div>
       <div className="space-y-4 pt-4 border-t border-outline-variant/30">
       <div className="flex justify-between text-body-md">
       <span className="text-on-surface-variant">Sous-total</span>
-      <span>65,00€</span>
+      <span>{PRIX}</span>
       </div>
       <div className="flex justify-between text-body-md">
       <span className="text-on-surface-variant">Livraison</span>
@@ -131,7 +134,7 @@ export default function PaiementPage() {
       </div>
       <div className="flex justify-between font-headline-md text-2xl pt-4 border-t border-outline-variant/30">
       <span>Total</span>
-      <span className="text-secondary">65,00€</span>
+      <span className="text-secondary">{PRIX}</span>
       </div>
       </div>
       <div className="bg-surface-container-lowest/50 p-4 border-l-2 border-secondary italic text-body-md text-on-surface-variant leading-relaxed">
