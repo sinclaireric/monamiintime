@@ -48,7 +48,7 @@ const temoignages = [
 export default function HomePage() {
   return (
     <>
-      <main className="pt-24 overflow-hidden">
+      <main className="pt-8 overflow-hidden">
 
         {/* 1. Hero — comprendre en 5 secondes */}
         <section className="relative min-h-[85vh] flex flex-col justify-center items-center text-center px-margin-mobile md:px-margin-desktop luxury-gradient">
