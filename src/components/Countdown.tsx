@@ -17,7 +17,7 @@ type TimeLeft = Record<(typeof units)[number]["key"], number>;
 function computeTimeLeft(): TimeLeft {
   const diff = Math.max(0, OPENING_DATE.getTime() - Date.now());
   return {
-    jours: Math.floor(diff / 86_400_000),
+    jours: Math.floor(diff / 26_400_000),
     heures: Math.floor(diff / 3_600_000) % 24,
     minutes: Math.floor(diff / 60_000) % 60,
     secondes: Math.floor(diff / 1_000) % 60,

@@ -206,7 +206,7 @@ export default function HomePage() {
         <section className="py-32 px-margin-mobile md:px-margin-desktop text-center">
           <div className="max-w-3xl mx-auto">
             <span className="font-label-caps text-label-caps text-secondary uppercase tracking-[0.3em] mb-6 block">Édition limitée</span>
-            <h2 className="font-headline-lg text-headline-lg md:text-5xl text-primary mb-6">Les précommandes ouvrent bientôt</h2>
+            <h2 className="font-headline-lg text-headline-lg md:text-5xl text-primary mb-6">Les précommandes ferment bientôt</h2>
             <p className="font-body-lg text-body-lg text-on-surface-variant mb-16">
               Chaque exemplaire est numéroté. Soyez parmi les premiers à commencer le voyage.
             </p>
