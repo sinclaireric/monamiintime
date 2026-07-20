@@ -79,8 +79,7 @@ export default function ContactPage() {
               <span className="material-symbols-outlined text-secondary text-3xl mb-6 block">schedule</span>
               <h2 className="font-headline-md text-headline-md text-primary mb-3">Précommandes</h2>
               <p className="font-body-md text-body-md text-on-surface-variant">
-                Les précommandes ouvrent bientôt. Chaque exemplaire est numéroté&nbsp;—
-                inscrivez-vous à la newsletter depuis le pied de page pour être prévenu·e en premier.
+                Les précommandes se terminent bientôt. Chaque exemplaire est numéroté&nbsp;—
               </p>
             </div>
           </aside>
