@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 // Date d'ouverture des précommandes — à ajuster le moment venu.
-const OPENING_DATE = new Date("2026-09-01T09:00:00+02:00");
+const OPENING_DATE = new Date("2026-08-01T09:00:00+02:00");
 
 const units = [
   { key: "jours", label: "Jours" },
@@ -17,7 +17,7 @@ type TimeLeft = Record<(typeof units)[number]["key"], number>;
 function computeTimeLeft(): TimeLeft {
   const diff = Math.max(0, OPENING_DATE.getTime() - Date.now());
   return {
-    jours: Math.floor(diff / 26_400_000),
+    jours: Math.floor(diff / 86_400_000),
     heures: Math.floor(diff / 3_600_000) % 24,
     minutes: Math.floor(diff / 60_000) % 60,
     secondes: Math.floor(diff / 1_000) % 60,
